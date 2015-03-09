@@ -18,6 +18,9 @@ shinyUI(fluidPage(
       helpText("Code source: https://github.com/lunagui/ForecastRental")
     ),
     
-    mainPanel(plotOutput("plot"))
+    mainPanel(plotOutput("plot"),
+              h4("Forecast"),
+              verbatimTextOutput("view"))
+    
   )
 ))
